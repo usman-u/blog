@@ -8,7 +8,7 @@ params:
         disableFingerprinting: true
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Usman
-    description: "Networking | NetDevOps | BGP | DN42 | Linux"
+    description: "Networking | Automation | NetDevOps | BGP | DN42 | Linux"
     keywords: [Blog, Networking, WireGuard, OSPF, BGP, Edgerouterx]
     author: Usman
     # author: ["Me", "You"] # multiple authors
