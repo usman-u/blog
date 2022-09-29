@@ -1,0 +1,85 @@
+baseURL: "https://blog.usman.network/"
+title: Usman
+paginate: 10
+theme: PaperMod
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Usman
+    description: "Networking | BGP | DN42 | Linux"
+    keywords: [Blog, Networking, WireGuard, OSPF, BGP, Edgerouterx]
+    author: Usman
+    # author: ["Me", "You"] # multiple authors
+    images: ["/image/pfp.jpg"]
+    DateFormat: "2 January, 2006"
+    defaultTheme: dark # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: true
+    hidemeta: false
+    hideSummary: False
+    showtoc: false
+    tocopen: false
+
+    homeInfoParams:
+        Title: "Hello!"
+        Content: I'm Usman, a UK based A-Level student and aspiring Network Engineer. Currently dabbling in OSPF, BGP, IPv6 and Network Automation.
+
+    # profileMode:
+    #     enabled: false
+    #     title: "Hello!"
+    #     subtitle: "Welcome to my Blog. I'm Usman, a UK-based A Level student and aspiring Network Engineer. Currently dabbling in OSPF, BGP & IPv6."
+    #     imageUrl: "/images/pfp.jpg"
+    #     imageWidth: 200
+    #     imageHeight: 200
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/usman-u"
+        - name: discord
+          url: "https://discord.com/users/371617715443466253"
+        - name: email
+          url: "mailto:usman@usman.network"
+
+disqusShortname: blog-usman-network
+
+googleAnalytics: "G-KWB2M6CZK2"
+
+menu:
+    main:
+        - identifier: posts
+          name: Posts
+          url: /posts/
+          weight: 10
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 1
+
+        - identifier: contact
+          name: Contact
+          url: /contact/
+          weight: 30
+
+        - identifier: DN42 Peering
+          name: DN42 Peering
+          url: /dn42/
+          weight: 1
+
+        # - identifier: memes
+        #   name: Memes
+        #   url: /memes/
+        #   weight: 20
+
+# for search
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON 
