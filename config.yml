@@ -60,10 +60,10 @@ menu:
           name: Posts
           url: /posts/
           weight: 10
-        - identifier: search
-          name: Search
-          url: /search/
-          weight: 1
+        # - identifier: search
+        #   name: Search
+        #   url: /search/
+        #   weight: 1
 
         - identifier: contact
           name: Contact
