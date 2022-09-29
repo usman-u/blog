@@ -15,6 +15,7 @@ I recently connected to the DN42 BGP mesh, a big dynamic VPN which employs WAN t
 *Read my other most more info.*
 
 
+
 ### The Problem
 One problem I encountered was that some prefixes (outside of the designated DN42 `172.20.0.0/14` range) were being advertised. Specifically in the `10.0.0.0/8` range.
 

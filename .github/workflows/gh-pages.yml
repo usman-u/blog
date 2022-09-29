@@ -27,7 +27,7 @@ jobs:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: usman-u/usman-umer.github.io
           publish_dir: ./public
-          #   keep_files: true
+          keep_files: true
           user_name: usman-u
           user_email: unumer@hotmail.com
           publish_branch: main
