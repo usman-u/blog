@@ -4,6 +4,8 @@ paginate: 10
 theme: PaperMod
 
 params:
+    assets:
+        disableFingerprinting: true
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Usman
     description: "Networking | NetDevOps | BGP | DN42 | Linux"
@@ -31,8 +33,6 @@ params:
         Title: "Hello!"
         Content: I'm Usman, a UK based A-Level student and aspiring Network Engineer. Currently dabbling in OSPF, BGP, IPv6 and Network Automation.
 
-    assets:
-        disableFingerprinting: true
 
     # profileMode:
     #     enabled: false
