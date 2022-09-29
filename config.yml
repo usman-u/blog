@@ -6,7 +6,7 @@ theme: PaperMod
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Usman
-    description: "Networking | BGP | DN42 | Linux"
+    description: "Networking | NetDevOps | BGP | DN42 | Linux"
     keywords: [Blog, Networking, WireGuard, OSPF, BGP, Edgerouterx]
     author: Usman
     # author: ["Me", "You"] # multiple authors
