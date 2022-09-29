@@ -52,7 +52,7 @@ The EdgeRouter-X costs £50, and has some enterprise grade features and dynamic 
 
 ![ER-X-WEBUI](/images/erx-webui.jpg)
 
-The EdgeRouter devices come with Ubiquiti's Debian Linux based EdgeOS, which is a fork of Vyatta/Vyos.
+The EdgeRouter devices come with Ubiquiti's Debian Linux based EdgeOS, which is a fork of Vyatta.
 
 There is a Web UI for basic configuration, and a Juniper-style CLI for more advanced functions.
 
