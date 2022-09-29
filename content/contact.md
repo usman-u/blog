@@ -8,5 +8,3 @@ ShowReadingTime: false
 ---
 
 You can contact me via e-mail at: usman@usman.network
-
-Or on Discord: `usman#5151`
