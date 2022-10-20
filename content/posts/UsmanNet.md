@@ -5,11 +5,21 @@ draft: false
 showtoc: false
 cover:
     image: "/images/hn/cables.PNG"
+    # image: "/images/hn/weathermap.png"
     alt: "alt"
     caption: ""
     relative: false 
 ---
+
+### Logical Overview
 ![ Diagram](/images/hn/net_map.png)
+
+---
+
+### LibreNMS Weathermap
+![ Diagram](/images/hn/weathermap.png)
+
+[Click here](https://libre.usman.network/plugins/Weathermap/test.html) to see a live version of the weathermap.
 
 ---
 
