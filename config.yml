@@ -42,8 +42,6 @@ params:
     #     imageHeight: 200
 
     socialIcons:
-        - name: linkedin
-          url: "https://www.linkedin.com/in/usman--umer/"
         - name: github
           url: "https://github.com/usman-u"
         - name: discord
