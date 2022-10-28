@@ -48,6 +48,8 @@ params:
           url: "https://discord.com/users/371617715443466253"
         - name: email
           url: "mailto:usman@usman.network"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/usman--umer/"
 
 disqusShortname: blog-usman-network
 
