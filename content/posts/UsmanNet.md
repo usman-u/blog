@@ -27,13 +27,13 @@ cover:
     * Prefixes from eBGP peers are filtered using RPKI-ROA (docker), such that invalid prefixed are removed. See my [other post](./bgp-rpki-roa) for more info.
 
 * OSPF:
-    * OSPF area 0 between **erx.usman**, **erx.zahid** & **fr-lil1** (advertising only internal routes).
+    * OSPF area 0 between **erx.usman** & **fr-lil1** (advertising only internal routes).
     * **fr-lil1** is the OSPF ABR.
     * OSPF area 1 between **fr-lil1**, **uk-lon1** & **us-west1**.
     * Using MultiArea OSPF, so that a full DN42 BGP route table isn't redistributed into OSPF.
     * **172.20.0.0/14** is summarised into area 0, at the OSPF ABR (fr-lil1).
 
-* Source NAT on erx.usman & erx.zahid, such that traffic destined for DN42 services (**172.20.0.0/14**), is translated into a DN42 IP (from my range).
+* Source NAT on **erx.usman** such that traffic destined for DN42 services (**172.20.0.0/14**), is translated into a DN42 IP (from my range).
 * Authoritative DNS records (for the **.lan** TLD) are running on **pi.usman.lan** & **plex.usman.lan**, as Unbound Docker Containers.
 * Partly deployed using Drone CI/CD and my own Python Configuration Management Framework. 
 * See [github.com/usman-u/network-automation](https://github.com/usman-u/network-automation) and [github.com/usman-u/usmannet](github.com/usman-u/usmannet) for more info.
@@ -53,8 +53,8 @@ cover:
 ### My Home LAN
 
 * Ubiquiti Edgerouter X - **erx.usman.lan**
-    * WireGuard VPNs to **erx.zahid.lan** and **dn42-vps.lan**.
-    * OSPF area 1 neighbors with**erx.zahid.lan** and **dn42-vps.lan**.
+    * WireGuard VPNs to and **dn42-vps.lan**.
+    * OSPF area 1 neighbors with and **dn42-vps.lan**.
     * Source NAT on VPN interfaces, such that any outbound traffic destined for DN42, is NATed to a DN42 IP. 
     * *Router-On-A-Stick* VLANs - with a VLAN trunk down to the Cisco 2960G.
 
@@ -64,7 +64,7 @@ cover:
 * Raspberry Pi 4 8GB - **pi.usman.lan**
 
     * Some of the Docker Applications I host:
-        * [Unbound DNS Server](https://github.com/MatthewVance/unbound-docker-rpi) DNS A and PTR records, for the **.lan** domain.
+        * [BIND9 DNS Server](https://wiki.debian.org/Bind9) DNS A and PTR records, for the **.usman.network.** domain.
         * [Plex Media Server](https://docs.linuxserver.io/images/docker-plex)
         * [Radarr](https://radarr.video/), [Sonarr](https://sonarr.tv/), [Jackett](https://github.com/Jackett/Jackett), [qBittorrent](https://hub.docker.com/r/linuxserver/qbittorrent).
         * [Syncthing](https://syncthing.net/).
@@ -81,19 +81,5 @@ cover:
 
 * My DN42 nodes are hosted on cloud infrastructure.
 * See [my DN42 peering page](../../dn42) for more info.
-
----
-
-### Offsite Network - Owned by Zahid (see [f2ncy.github.io](https://f2ncy.github.io))
-* Ubiquiti Edgerouter X - **erx.zahid.lan**
-    * WireGuard VPNs and OSPF area 1 to **erx.usman.lan** and **fr-lil1.dn42**
-    * Source NAT on VPN interfaces, such that any outbound traffic destined for DN42, is NATed to a DN42 IP. 
-
-* Cisco 3560G - **core.zahid.lan**
-    * SVIs for VLANs.
-    * OSPF area 1 with **erx.zahid.lan**
-
-* Raspberry Pi 4 8GB - **pi.zahid.lan**
-    * Running as a host for Docker apps.
 
 ---

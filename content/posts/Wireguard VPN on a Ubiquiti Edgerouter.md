@@ -47,7 +47,7 @@ Ubiquiti's EdgeRouter lineup is a relatively inexpensive platform which provides
 ![ER-X](/images/er-x.jpg)
 
 
-The EdgeRouter-X costs £50, and has some enterprise grade features and dynamic routing protocols such as BGP, MPLS, OSPF, QoS, RIP, DNAT, SNAT, DPI, etc.
+The EdgeRouter-X cost me £50, and has some enterprise grade features and dynamic routing protocols such as BGP, MPLS, OSPF, QoS, RIP, DNAT, SNAT, DPI, etc.
 
 
 ![ER-X-WEBUI](/images/erx-webui.jpg)
@@ -163,7 +163,7 @@ user@ER-X:~$ mkdir my_phone
 user@ER-X:~$ cd my_phone
 
 # Generate a key pair for the my_phone peer, in the my_phone directory
-user@ER-X:~/server_keys/$ wg genkey | tee privatekey | wg pubkey > publickey
+user@ER-X:~/my_phone/$ wg genkey | tee privatekey | wg pubkey > publickey
 ```
 You then should have two directories; one called `server_keys` and `my_phone`.
 ```
@@ -279,8 +279,8 @@ Create a file on the peer, with the file extension as `.conf`.
 [Interface]
 PrivateKey = <my_phone private key>
 ListenPort = 51820
-Address = 10.6.69.3/32                        # The allowed IPs value set on the server
-DNS = 1.1.1.1                                # Optional
+Address = 10.6.69.2/32                        # The allowed IPs value set on the server
+DNS = 1.1.1.1                                 # Optional
 
 [Peer]
 PublicKey = <pubkey of server>

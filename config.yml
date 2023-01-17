@@ -31,7 +31,7 @@ params:
 
     homeInfoParams:
         Title: "Hello!"
-        Content: I'm Usman, a UK based A-Level student and aspiring Network/Software Engineer. Currently dabbling in OSPF, BGP, NetDevOps & Network Automation.
+        Content: I'm Usman, a UK based A-Level student and aspiring Network/Software Engineer. Currently dabbling in Multicast, BGP, NetDevOps & Network Automation.
 
     # profileMode:
     #     enabled: false
