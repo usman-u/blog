@@ -10,7 +10,7 @@ params:
     title: Usman
     description: "Networking | Automation | NetDevOps | BGP | DN42 | Linux"
     keywords: [Blog, Networking, WireGuard, OSPF, BGP, Edgerouterx]
-    author: Usman
+    author: Usman 
     # author: ["Me", "You"] # multiple authors
     images: ["/image/pfp.jpg"]
     DateFormat: "2 January, 2006"
@@ -31,7 +31,7 @@ params:
 
     homeInfoParams:
         Title: "Hello!"
-        Content: I'm Usman, a UK based A-Level student and aspiring Network/Software Engineer. Currently dabbling in Multicast, BGP, NetDevOps & Network Automation.
+        Content: I'm Usman, a UK based A-Level student and aspiring network/software engineer. Currently dabbling in Multicast, BGP, NetDevOps & Network Automation.
 
     # profileMode:
     #     enabled: false
