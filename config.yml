@@ -31,15 +31,7 @@ params:
 
     homeInfoParams:
         Title: "Hello!"
-        Content: I'm Usman, a UK based A-Level student and aspiring network/software engineer. Currently dabbling in Multicast, BGP, NetDevOps & Network Automation.
-
-    # profileMode:
-    #     enabled: false
-    #     title: "Hello!"
-    #     subtitle: "Welcome to my Blog. I'm Usman, a UK-based A Level student and aspiring Network Engineer. Currently dabbling in OSPF, BGP & IPv6."
-    #     imageUrl: "/images/pfp.jpg"
-    #     imageWidth: 200
-    #     imageHeight: 200
+        Content: I'm Usman, an incoming Network Engineering Degree Apprentice @ [Jump Trading](https://jumptrading.com).
 
     socialIcons:
         - name: github
@@ -58,23 +50,23 @@ googleAnalytics: "G-KWB2M6CZK2"
 menu:
     main:
         - identifier: posts
-          name: Posts
+          name: Articles
           url: /posts/
-          weight: 10
+          weight: 1
         # - identifier: search
         #   name: Search
         #   url: /search/
         #   weight: 1
 
-        - identifier: contact
-          name: Contact
-          url: /contact/
-          weight: 30
+        # - identifier: contact
+        #   name: Contact
+        #   url: /contact/
+        #   weight: 30
 
         - identifier: DN42 Peering
           name: DN42 Peering
-          url: /dn42/
-          weight: 1
+          url: https://dn42.usman.network
+          weight: 10
 
         # - identifier: memes
         #   name: Memes
