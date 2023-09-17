@@ -31,7 +31,7 @@ params:
 
     homeInfoParams:
         Title: "Hello!"
-        Content: I'm Usman, an incoming Network Engineering Degree Apprentice @ [Jump Trading](https://jumptrading.com). Dabbling in Multicast, BGP, and Network Automation.
+        Content: I'm Usman, a Network Engineering Degree Apprentice @ [Jump Trading](https://jumptrading.com). Currently dabbling in Multicast, BGP, and Network Automation.
 
     socialIcons:
         - name: github
